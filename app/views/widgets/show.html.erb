@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Partial:</strong>
+  <%= @widget.partial %>
+</p>
+
+<p>
+  <strong>X:</strong>
+  <%= @widget.x %>
+</p>
+
+<p>
+  <strong>Y:</strong>
+  <%= @widget.y %>
+</p>
+
+<p>
+  <strong>System:</strong>
+  <%= @widget.system %>
+</p>
+
+<%= link_to 'Edit', edit_widget_path(@widget) %> |
+<%= link_to 'Back', widgets_path %>

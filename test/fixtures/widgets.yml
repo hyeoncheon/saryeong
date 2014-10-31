@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  partial: MyString
+  x: 1
+  'y': 1
+  system: false
+
+two:
+  partial: MyString
+  x: 1
+  'y': 1
+  system: false
