@@ -19,5 +19,10 @@ module Saryeong
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # saryeong config.
+    config.relative_url_root = '/saryeong'
+    config.assets.prefix = '/saryeong/assets'
   end
 end
+# vim: set ts=2 sw=2 expandtab:
