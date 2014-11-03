@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
  scope '/saryeong' do
   resources :widgets
+  resources :users
 
   ### hyeoncheon.siso
   get '/auth/:provider/callback', to: 'sessions#create'

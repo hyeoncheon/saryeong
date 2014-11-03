@@ -5,8 +5,7 @@ class ApplicationController < ActionController::Base
 
   private
   def current_user
-    # @current_user ||= User.find_by_id(session[:user]) if session[:user]
-    nil
+    @current_user ||= User.find_by_id(session[:user]) if session[:user]
   end
   helper_method :current_user
 end

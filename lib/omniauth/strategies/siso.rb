@@ -21,7 +21,11 @@ module OmniAuth
           :email => raw_info['mail'],
           :nickname => raw_info['mail'],
           :image => raw_info['image'],
-          :phone => raw_info['phone'].to_s + ' ' + raw_info['mobile'].to_s
+          :phone => raw_info['phone'],
+          :mobile => raw_info['mobile'],
+
+          :gid => raw_info['group_id'],
+          :active => raw_info['active']
         }
       end
 
