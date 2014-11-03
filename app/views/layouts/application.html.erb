@@ -8,7 +8,20 @@
 </head>
 <body>
 
+<% if current_user %>
+
 <%= yield %>
+
+<% else %>
+  <div id="hcu-dialog-login" class="hc-dialog">
+    <div class="hc-dialog-title">Login</div>
+    <div class="hc-dialog-body">
+      <span>Signin with</span>
+      <%= link_to "SiOS", '/saryeong/auth/siso' %>
+    </div>
+  </div>
+<% end %>
 
 </body>
 </html>
+<!-- vim: set ts=2 sw=2 expandtab: -->

@@ -2,6 +2,11 @@ Rails.application.routes.draw do
  scope '/saryeong' do
   resources :widgets
 
+  ### hyeoncheon.siso
+  get '/auth/:provider/callback', to: 'sessions#create'
+  get '/auth/failure', to: 'sessions#failure'
+  get '/signout', to: 'sessions#signout'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
